@@ -3,6 +3,7 @@
   "version": "0.0.4",
   "homepage": "https://bit.dev/sbwrege2z/shared/grunt-config",
   "main": "index.js",
+  "dependencies": {},
   "devDependencies": {},
   "peerDependencies": {
     "grunt": "^1.0.4"
