@@ -1,0 +1,11 @@
+{
+    "env": {},
+    "overrides": {
+        "dependencies": {
+            "grunt": "-"
+        },
+        "peerDependencies": {
+            "grunt": "^1.0.4"
+        }
+    }
+}
