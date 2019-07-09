@@ -37,13 +37,16 @@ let git = (module.exports = {
   },
   checkout: {
     options: {
-      branch: 'development'
+      branch: null
     }
   },
   pull: {
     options: {}
   },
   merge: {
+    options: {}
+  },
+  completeMerge: {
     options: {}
   },
   debug: {

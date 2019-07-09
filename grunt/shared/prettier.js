@@ -10,7 +10,10 @@ let prettier = (module.exports = {
     options: {},
     files: [
       {
-        src: ['**/*.{js,json,html,html,hbs,yaml}', '*.{js,json,html,html,hbs,yaml}']
+        src: [
+          '{lib,templates,grunt}/**/*.{js,json,html,html,hbs,yaml}',
+          '*.{js,json,html,html,hbs,yaml}'
+        ]
       }
     ]
   },
@@ -23,7 +26,9 @@ let prettier = (module.exports = {
     ]
   },
   json: {
-    options: {},
+    options: {
+      check: false
+    },
     files: [
       {
         src: ['**/*.json', '!node_modules/**', '!dist/**', '!stage/**']

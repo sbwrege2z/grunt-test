@@ -10,7 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.0.4",
-    "load-grunt-config": "^2.0.0"
+    "load-grunt-config": "^2.0.0",
+    "shelljs": "^0.8.3"
   },
   "bit": {
     "env": {},
@@ -19,6 +20,7 @@
   },
   "dependencies": {
     "@bit/sbwrege2z.shared.grunt-config": "file:./grunt/shared",
-    "@bit/sbwrege2z.shared.grunt-lib": "file:./lib/grunt/shared"
+    "@bit/sbwrege2z.shared.grunt-lib": "file:./lib/grunt/shared",
+    "grunt-newer": "^1.3.0"
   }
 }
