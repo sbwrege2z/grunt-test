@@ -1,0 +1,15 @@
+{
+  "name": "@bit/sbwrege2z.shared.grunt-config",
+  "version": "0.0.3",
+  "homepage": "https://bit.dev/sbwrege2z/shared/grunt-config",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.4"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {}
+  }
+}

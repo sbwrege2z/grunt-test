@@ -11,5 +11,14 @@
   "devDependencies": {
     "grunt": "^1.0.4",
     "load-grunt-config": "^2.0.0"
+  },
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  },
+  "dependencies": {
+    "@bit/sbwrege2z.shared.grunt-config": "file:./grunt/shared",
+    "@bit/sbwrege2z.shared.grunt-lib": "file:./lib/grunt/shared"
   }
 }
