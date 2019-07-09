@@ -3,11 +3,10 @@
   "version": "0.0.3",
   "homepage": "https://bit.dev/sbwrege2z/shared/grunt-config",
   "main": "index.js",
-  "dependencies": {
+  "devDependencies": {},
+  "peerDependencies": {
     "grunt": "^1.0.4"
   },
-  "devDependencies": {},
-  "peerDependencies": {},
   "license": "SEE LICENSE IN LICENSE",
   "bit": {
     "env": {}
