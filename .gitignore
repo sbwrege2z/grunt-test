@@ -1,0 +1,12 @@
+bin/
+pkg/
+stage/
+dist/
+node_modules/
+*/node_modules/
+*.code-workspace
+credentials.*
+data/grunt/
+*.cache
+package-lock.json
+lib/grunt/debug.js
