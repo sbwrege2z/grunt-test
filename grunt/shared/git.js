@@ -17,6 +17,9 @@ let git = (module.exports = {
   commit: {
     options: {}
   },
+  dallas: {
+    options: {}
+  },
   showTags: {
     options: {}
   },
