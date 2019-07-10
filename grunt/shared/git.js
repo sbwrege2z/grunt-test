@@ -14,10 +14,10 @@ let git = (module.exports = {
   clean: {
     options: {}
   },
-  commit: {
+  commitInternal: {
     options: {}
   },
-  dallas: {
+  commit: {
     options: {}
   },
   showTags: {
