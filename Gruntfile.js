@@ -18,12 +18,7 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('git', 'Git interactions', tasks.git);
 
   grunt.registerTask('checkout', 'check out branch', ['git:checkout']);
-
-  grunt.registerTask('commit', 'Lint, beautify, and commit changes', [
-    'jshint',
-    'newer:prettier:all',
-    'git:commit'
-  ]);
+  grunt.registerTask('commit', 'Lint, beautify, and commit changes', ['git:commit']);
 
   grunt.registerTask('completeMerge', 'complete merge that experienced conflicts', [
     'git:clean',

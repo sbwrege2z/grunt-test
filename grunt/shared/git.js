@@ -14,6 +14,9 @@ let git = (module.exports = {
   clean: {
     options: {}
   },
+  commitInternal: {
+    options: {}
+  },
   commit: {
     options: {}
   },
