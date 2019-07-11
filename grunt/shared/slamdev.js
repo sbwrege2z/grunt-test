@@ -8,7 +8,8 @@ let slamdev = (module.exports = {
     silent: false,
     verbose: false
   },
-  status: {
-    options: {}
-  }
+  commit: { options: {} },
+  status: { options: {} },
+  showBranches: { options: {} },
+  showTags: { options: {} }
 });
