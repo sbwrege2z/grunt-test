@@ -16,6 +16,7 @@ module.exports = function(grunt) {
   grunt.registerTask('jshint', 'Checking syntax', tasks.jshint);
   grunt.registerMultiTask('prettier', 'Beautify source', tasks.prettier);
   grunt.registerMultiTask('git', 'Git interactions', tasks.git);
+  grunt.registerMultiTask('slamdev', 'SLAM Development', tasks.slamdev);
 
   grunt.registerTask('checkout', 'check out branch', ['git:checkout']);
   grunt.registerTask('commit', 'Lint, beautify, and commit changes', ['git:commit']);
@@ -37,4 +38,5 @@ module.exports = function(grunt) {
   tasks.mapDefaults('test', 'target1');
   tasks.mapDefaults('prettier', 'all');
   tasks.mapDefaults('git', 'status');
+  tasks.mapDefaults('slamdev', 'status');
 };
