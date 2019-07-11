@@ -11,6 +11,14 @@ let slamdev = (module.exports = {
   checkout: { options: { branch: null } },
   commit: { options: {} },
   initializeBranch: { options: {} },
+  mergeToDevelopment: {
+    options: {
+      commands: [
+        { operation: 'status', result: { uncommitted: false }, remember: ['currentBranch'] },
+        { operation: 'tag' }
+      ]
+    }
+  },
   newBranch: { options: { prefix: null, build: null } },
   pull: { options: {} },
   status: { options: {} },
