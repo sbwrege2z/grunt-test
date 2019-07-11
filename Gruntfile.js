@@ -23,6 +23,7 @@ module.exports = function(grunt) {
   grunt.registerTask('mergeToDevelopment', 'Merge current to development', [
     'slamdev:mergeToDevelopment'
   ]);
+  grunt.registerTask('status', 'status', ['slamdev:status']);
 
   grunt.registerTask('completeMerge', 'complete merge that experienced conflicts', [
     'git:clean',
