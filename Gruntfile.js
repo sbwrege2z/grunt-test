@@ -18,8 +18,11 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('git', 'Git interactions', tasks.git);
   grunt.registerMultiTask('slamdev', 'SLAM Development', tasks.slamdev);
 
-  grunt.registerTask('checkout', 'check out branch', ['git:checkout']);
-  grunt.registerTask('commit', 'Lint, beautify, and commit changes', ['git:commit']);
+  grunt.registerTask('checkout', 'check out branch', ['slamdev:checkout']);
+  grunt.registerTask('commit', 'Lint, beautify, and commit changes', ['slamdev:commit']);
+  grunt.registerTask('mergeToDevelopment', 'Merge current to development', [
+    'slamdev:mergeToDevelopment'
+  ]);
 
   grunt.registerTask('completeMerge', 'complete merge that experienced conflicts', [
     'git:clean',
@@ -28,12 +31,6 @@ module.exports = function(grunt) {
     'git:commit',
     'git:completeMerge'
   ]);
-
-  grunt.registerTask(
-    'mergeToDevelopment',
-    'Merge current branch to development and start a new branch',
-    ['git:clean', 'jshint', 'newer:prettier:all', 'git:commit', 'git:mergeToDevelopment']
-  );
 
   tasks.mapDefaults('test', 'target1');
   tasks.mapDefaults('prettier', 'all');
