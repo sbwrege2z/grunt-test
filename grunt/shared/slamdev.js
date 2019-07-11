@@ -10,6 +10,7 @@ let slamdev = (module.exports = {
   },
   checkout: { options: { branch: null } },
   commit: { options: {} },
+  pull: { options: {} },
   status: { options: {} },
   showBranches: { options: {} },
   showTags: { options: {} }
