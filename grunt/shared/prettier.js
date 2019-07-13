@@ -12,7 +12,11 @@ let prettier = (module.exports = {
       {
         src: [
           '{lib,templates,grunt}/**/*.{js,json,html,html,hbs,yaml}',
-          '*.{js,json,html,html,hbs,yaml}'
+          '*.{js,json,html,html,hbs,yaml}',
+          '!node_modules/**',
+          '!**/node_modules/**',
+          '!dist/**',
+          '!stage/**'
         ]
       }
     ]
@@ -21,7 +25,7 @@ let prettier = (module.exports = {
     options: {},
     files: [
       {
-        src: ['**/*.js', '!node_modules/**', '!dist/**', '!stage/**']
+        src: ['**/*.js', '!node_modules/**', '!**/node_modules/**', '!dist/**', '!stage/**']
       }
     ]
   },
@@ -31,7 +35,7 @@ let prettier = (module.exports = {
     },
     files: [
       {
-        src: ['**/*.json', '!node_modules/**', '!dist/**', '!stage/**']
+        src: ['**/*.json', '!node_modules/**', '!**/node_modules/**', '!dist/**', '!stage/**']
       }
     ]
   },
@@ -39,7 +43,7 @@ let prettier = (module.exports = {
     options: {},
     files: [
       {
-        src: ['**/*.yaml', '!node_modules/**', '!dist/**', '!stage/**']
+        src: ['**/*.yaml', '!node_modules/**', '!**/node_modules/**', '!dist/**', '!stage/**']
       }
     ]
   },
@@ -47,7 +51,7 @@ let prettier = (module.exports = {
     options: {},
     files: [
       {
-        src: ['**/*.hbs', '!node_modules/**', '!dist/**', '!stage/**']
+        src: ['**/*.hbs', '!node_modules/**', '!**/node_modules/**', '!dist/**', '!stage/**']
       }
     ]
   },
@@ -55,7 +59,7 @@ let prettier = (module.exports = {
     options: {},
     files: [
       {
-        src: ['**/*.{htm|html}', '!node_modules/**', '!dist/**', '!stage/**']
+        src: ['**/*.{htm|html}', '!node_modules/**', '!**/node_modules/**', '!dist/**', '!stage/**']
       }
     ]
   }
