@@ -1,6 +1,6 @@
 {
   "name": "@bit/sbwrege2z.shared.grunt-config",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "homepage": "https://bit.dev/sbwrege2z/shared/grunt-config",
   "main": "index.js",
   "dependencies": {},

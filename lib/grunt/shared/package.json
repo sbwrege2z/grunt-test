@@ -1,6 +1,6 @@
 {
   "name": "@bit/sbwrege2z.shared.grunt-lib",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://bit.dev/sbwrege2z/shared/grunt-lib",
   "main": "tasks.js",
   "dependencies": {
