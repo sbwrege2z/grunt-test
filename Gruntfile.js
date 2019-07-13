@@ -11,12 +11,20 @@ module.exports = function(grunt) {
     configPath: [path.join(process.cwd(), 'grunt'), path.join(process.cwd(), 'grunt/shared')]
   });
 
+  //
+  //  tasks
+  //
+
   grunt.registerMultiTask('test', 'Test task', tasks.test);
   grunt.registerMultiTask('simple', 'Log some stuff.', tasks.simple);
   grunt.registerTask('jshint', 'Checking syntax', tasks.jshint);
   grunt.registerMultiTask('prettier', 'Beautify source', tasks.prettier);
   grunt.registerMultiTask('git', 'Git interactions', tasks.git);
   grunt.registerMultiTask('slamdev', 'SLAM Development', tasks.slamdev);
+
+  //
+  //  slamdev - git aliases
+  //
 
   grunt.registerTask('checkout', 'check out branch', ['slamdev:checkout']);
   grunt.registerTask('commit', 'Lint, beautify, and commit changes', ['slamdev:commit']);
@@ -28,13 +36,9 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('status', 'status', ['slamdev:status']);
 
-  grunt.registerTask('completeMerge', 'complete merge that experienced conflicts', [
-    'git:clean',
-    'jshint',
-    'newer:prettier:all',
-    'git:commit',
-    'git:completeMerge'
-  ]);
+  //
+  //  defaults
+  //
 
   tasks.mapDefaults('test', 'target1');
   tasks.mapDefaults('prettier', 'all');
