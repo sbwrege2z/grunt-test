@@ -10,6 +10,7 @@ let slamdev = (module.exports = {
   },
   checkout: { options: { branch: null } },
   commit: { options: {} },
+  completeMerge: { options: { prefix: null } },
   initializeBranch: { options: {} },
   mergeToDevelopment: {
     options: {

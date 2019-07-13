@@ -20,6 +20,9 @@ module.exports = function(grunt) {
 
   grunt.registerTask('checkout', 'check out branch', ['slamdev:checkout']);
   grunt.registerTask('commit', 'Lint, beautify, and commit changes', ['slamdev:commit']);
+  grunt.registerTask('completeMerge', 'Complete merge on development branch', [
+    'slamdev:completeMerge'
+  ]);
   grunt.registerTask('mergeToDevelopment', 'Merge current to development', [
     'slamdev:mergeToDevelopment'
   ]);
