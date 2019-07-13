@@ -36,6 +36,10 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('status', 'status', ['slamdev:status']);
 
+  //
+  //  defaults
+  //
+
   tasks.mapDefaults('test', 'target1');
   tasks.mapDefaults('prettier', 'all');
   tasks.mapDefaults('git', 'status');
