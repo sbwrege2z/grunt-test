@@ -1,13 +1,13 @@
 {
   "name": "@bit/sbwrege2z.shared.grunt-lib",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "homepage": "https://bit.dev/sbwrege2z/shared/grunt-lib",
   "main": "tasks.js",
   "dependencies": {
-    "date-fns": "1.30.1",
-    "prompts": "2.1.0",
-    "shelljs": "0.8.3",
-    "svg2png": "4.1.1"
+    "date-fns": "^1.30.1",
+    "prompts": "^2.1.0",
+    "shelljs": "^0.8.3",
+    "svg2png": "^4.1.1"
   },
   "devDependencies": {},
   "peerDependencies": {
