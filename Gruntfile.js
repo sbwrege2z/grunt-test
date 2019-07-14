@@ -10,7 +10,7 @@ module.exports = function(grunt) {
     init: true,
     configPath: [path.join(process.cwd(), 'grunt'), path.join(process.cwd(), 'grunt/shared')]
   });
-
+  
   //
   //  tasks
   //
