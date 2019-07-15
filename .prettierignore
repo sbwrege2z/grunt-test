@@ -1,8 +1,0 @@
-node_modules/
-*/node_modules/
-dist/
-stage/
-file_sigs.json
-package-lock.json
-templates/teams/stylesheet.hbs
-*.css
