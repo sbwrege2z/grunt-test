@@ -8,14 +8,14 @@ let ghpages = (module.exports = {
     //clone: '/home/evol/working/stats/test123',
     repo: 'https://github.com/sbwrege2z/test123.git',
     message: 'auto-generated commit from gh-pages',
-    tag: 'bld190714',
+    tag: 'bld190714a',
     user: {
       name: 'sbwrege2z',
       email: 'sbwrege2z@gmail.com'
     },
     //base: 'test/debug',
-    base: 'test',
-    branch: 'test123'
+    base: 'test/debug',
+    branch: 'debug'
   },
   debug: {
     src: ['**/*']
