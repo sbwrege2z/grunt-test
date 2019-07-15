@@ -5,10 +5,10 @@
 let ghpages = (module.exports = {
   options: {
     push: true,
-    //clone: '/mnt/evol/working/stats/gh-pages/test123',
+    clone: '../gh-pages/test123',
     repo: 'https://github.com/sbwrege2z/test123.git',
     message: 'auto-generated commit from gh-pages',
-    tag: 'bld190714e',
+    tag: 'bld190714f',
     user: {
       name: 'sbwrege2z',
       email: 'sbwrege2z@gmail.com'
