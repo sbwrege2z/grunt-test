@@ -8,5 +8,6 @@ node_modules/
 credentials.*
 data/grunt/
 *.cache
+.grunt/
 package-lock.json
 lib/grunt/debug.js

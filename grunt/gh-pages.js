@@ -4,8 +4,8 @@
 
 let ghpages = (module.exports = {
   options: {
-    push: true,
-    clone: '/home/evol/working/stats/test123',
+    //push: true,
+    //clone: '/home/evol/working/stats/test123',
     repo: 'https://github.com/sbwrege2z/test123.git',
     message: 'auto-generated commit from gh-pages',
     tag: 'bld190714',
@@ -13,11 +13,11 @@ let ghpages = (module.exports = {
       name: 'sbwrege2z',
       email: 'sbwrege2z@gmail.com'
     },
-    base: 'test/debug',
-    branch: 'development'
+    //base: 'test/debug',
+    base: 'test',
+    branch: 'test123'
   },
   debug: {
-    options: {},
     src: ['**/*']
   }
 });
