@@ -21,6 +21,7 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('prettier', 'Beautify source', tasks.prettier);
   grunt.registerMultiTask('git', 'Git interactions', tasks.git);
   grunt.registerMultiTask('slamdev', 'SLAM Development', tasks.slamdev);
+  grunt.registerMultiTask('webgit', 'GitHib Pages website publishing', tasks.webgit);
 
   //
   //  slamdev - git aliases
@@ -44,4 +45,5 @@ module.exports = function(grunt) {
   tasks.mapDefaults('prettier', 'all');
   tasks.mapDefaults('git', 'status');
   tasks.mapDefaults('slamdev', 'status');
+  tasks.mapDefaults('webgit', 'default');
 };
